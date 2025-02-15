@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Recipe Generator</title>
   </head>
@@ -12,8 +13,8 @@
       <header>
         <h1>What's for dinner?</h1>
         <h2>
-          Enter a few ingredients you would like to use for quick and easy
-          recipes that the whole family will love.
+          Enter the ingredient you would like to use for a quick and easy recipe
+          idea.
         </h2>
       </header>
 
@@ -21,11 +22,12 @@
         <form id="recipe-generator-form">
           <input
             type="text"
-            placeholder="Enter ingredients you want to use"
+            placeholder="Enter ingredient"
             autofocus
             required
             autocomplete="off"
             class="instructions"
+            id="user-ingredient"
           />
           <input type="submit" class="submit-button" />
         </form>
